@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 export class ChangePasswordComponent {
   passwordData = { oldPassword: '', newPassword: '' };
 
-  constructor(private userService: UserService, private router: Router) {}
+
 
   changePassword(): void {
     this.userService.changePassword(this.passwordData).subscribe({
