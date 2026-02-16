@@ -4,12 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 
 @Component({
-  selector: 'app-change-password',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './change-password.component.html',
-  styleUrls: ['./change-password.component.css']
-})
+  selector: 
 export class ChangePasswordComponent {
   passwordData = { oldPassword: '', newPassword: '' };
 
