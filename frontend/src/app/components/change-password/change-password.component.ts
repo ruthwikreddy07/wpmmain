@@ -16,7 +16,5 @@ export class ChangePasswordComponent {
         alert('Password changed successfully!');
         this.router.navigate(['/profile']);
       },
-      error: (err) => alert('Error: ' + err.error.message)
-    });
-  }
+      e
 }
