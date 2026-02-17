@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 @Component({
   selector: 
 export class ChangePasswordComponent {
-  passwordData = { oldPassword: '', newPassword: '' };
+  pa', newPassword: '' };
 
 
 
