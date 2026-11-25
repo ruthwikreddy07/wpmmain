@@ -7,6 +7,11 @@ exports.signup = async (req, res) => {
     // 1. Make sure 'phone' is being received from the request body
     const { name, email, password, phone } = req.body;
 
+    // Validate required fields
+    if (!name || !email || !password) {
+      return res.status(400).json({ message: "Name, email, and password are required" });
+    }
+
     const existingUser = await User.findOne({ email });
     if (existingUser) {
       return res.status(400).json({ message: "User already exists" });
